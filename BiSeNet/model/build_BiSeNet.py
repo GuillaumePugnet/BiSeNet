@@ -178,7 +178,7 @@ if __name__ == '__main__':
     # for key, params in model.named_parameters():
     #     if 'bn' in key:
     #         params.requires_grad = False
-    from utils import group_weight
+    from bisenet.utils import group_weight
     # params_list = []
     # for module in model.mul_lr:
     #     params_list = group_weight(params_list, module, nn.BatchNorm2d, 10)

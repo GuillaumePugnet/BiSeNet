@@ -8,7 +8,7 @@ import pandas as pd
 import numpy as np
 from imgaug import augmenters as iaa
 import imgaug as ia
-from utils import get_label_info, one_hot_it, RandomCrop, reverse_one_hot, one_hot_it_v11, one_hot_it_v11_dice
+from bisenet.utils import get_label_info, one_hot_it, RandomCrop, reverse_one_hot, one_hot_it_v11, one_hot_it_v11_dice
 import random
 
 def augmentation():
@@ -135,7 +135,7 @@ if __name__ == '__main__':
                   ['/data/sqy/CamVid/train_labels', '/data/sqy/CamVid/val_labels'], '/data/sqy/CamVid/class_dict.csv',
                   (720, 960), loss='crossentropy', mode='val')
     from model.build_BiSeNet import BiSeNet
-    from utils import reverse_one_hot, get_label_info, colour_code_segmentation, compute_global_accuracy
+    from bisenet.utils import reverse_one_hot, get_label_info, colour_code_segmentation, compute_global_accuracy
 
     label_info = get_label_info('/data/sqy/CamVid/class_dict.csv')
     for i, (img, label) in enumerate(data):

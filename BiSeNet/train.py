@@ -8,10 +8,10 @@ import torch
 from tensorboardX import SummaryWriter
 import tqdm
 import numpy as np
-from utils import poly_lr_scheduler
-from utils import reverse_one_hot, compute_global_accuracy, fast_hist, \
+from bisenet.utils import poly_lr_scheduler
+from bisenet.utils import reverse_one_hot, compute_global_accuracy, fast_hist, \
     per_class_iu
-from loss import DiceLoss
+from bisenet.loss import DiceLoss
 
 
 def val(args, model, dataloader):

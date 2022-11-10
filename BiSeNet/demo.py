@@ -8,7 +8,7 @@ from imgaug import augmenters as iaa
 from PIL import Image
 from torchvision import transforms
 import numpy as np
-from utils import reverse_one_hot, get_label_info, colour_code_segmentation
+from bisenet.utils import reverse_one_hot, get_label_info, colour_code_segmentation
 
 def predict_on_image(model, args):
     # pre-processing on image
