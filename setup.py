@@ -1,14 +1,14 @@
 from setuptools import setup
 
 setup(
-    name='bisenet',
+    name='BiSeNet',
     version='1.0.0',    
     description='BiSeNet',
     url='https://github.com/GuillaumePugnet/BiSeNet',
     author='',
     author_email='',
     license='',
-    packages=['bisenet'],
+    packages=['BiSeNet'],
     install_requires=[                   
                       ],
 
