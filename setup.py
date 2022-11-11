@@ -8,7 +8,7 @@ setup(
     author='',
     author_email='',
     license='',
-    packages=['BiSeNet'
+    packages=['BiSeNet',
               'BiSeNet/model'],
     install_requires=[                   
                       ],
