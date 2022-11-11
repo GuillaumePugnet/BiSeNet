@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='BiSeNet',
-    version='1.0.1',    
+    version='1.0.2',    
     description='BiSeNet',
     url='https://github.com/GuillaumePugnet/BiSeNet',
     author='',
